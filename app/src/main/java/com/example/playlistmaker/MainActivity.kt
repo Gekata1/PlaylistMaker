@@ -16,14 +16,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
             val button1 = findViewById<Button>(R.id.button_search)
-            button1.setOnClickListener(object : View.OnClickListener {
-                override fun onClick(v: View?) {
-                    Toast.makeText(this@MainActivity, "ПОИСК", Toast.LENGTH_SHORT).show()
+            button1.setOnClickListener{
+                    val button1Intent = Intent(this,SearchActivity::class.java)
+                    startActivity(button1Intent)
                 }
-            })
         val button2 = findViewById<Button>(R.id.button_media)
         button2.setOnClickListener {
-            Toast.makeText(this@MainActivity, "МЕДИА", Toast.LENGTH_SHORT).show()
+            val button2Intent = Intent(this, MediaActivity::class.java)
+            startActivity(button2Intent)
         }
         val button3 = findViewById<Button>(R.id.button_settings)
         button3.setOnClickListener {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(button3Intent)
         }
     }
-    
+
     }
 
 
