@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:visibility="visible"
-    tools:visibility="visible"
     android:theme="@style/Settings"
-    >
+    android:visibility="visible"
+    tools:visibility="visible">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,8 +20,7 @@
             android:layout_width="48dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
-            app:icon="@drawable/arrow_back"
-            app:iconTint="@color/black" />
+            app:icon="@drawable/arrow_back" />
 
         <TextView
             android:layout_width="match_parent"
@@ -43,6 +41,7 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchNightMode"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="end"
@@ -74,6 +73,7 @@
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/shareButton"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,6 +100,7 @@
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/sendTicketButton"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -126,6 +127,7 @@
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/argsButton"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,8 +138,6 @@
 
         </LinearLayout>
     </LinearLayout>
-
-
 
 
 </LinearLayout>

@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Dark.Theme.PlaylistMaker" parent="Theme.Material3.DayNight.NoActionBar">
-       <item name="android:windowBackground">@color/blackYP</item>
+        <item name="android:windowBackground">@color/blackYP</item>
         <item name="android:textColor">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorPrimary">@color/blackYP</item>
@@ -13,9 +13,11 @@
         <item name="textColor">@color/white</item>
         <item name="android:colorPrimaryDark">@color/blackYP</item>
     </style>
+
     <style name="Main_night">
-        <item name = "android:background" >@color/blackYP</item>
+        <item name="android:background">@color/blackYP</item>
     </style>
+
     <style name="Settings_night" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:colorPrimary">@color/blackYP</item>
         <item name="android:background">@color/blackYP</item>
@@ -29,5 +31,23 @@
         <item name="grayWhite">@color/white</item>
         <item name="android:fontFamily">@font/ys_display_medium</item>
     </style>
+    <style name="Search" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorPrimary">@color/blackYP</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:background">@color/blackYP</item>
+        <item name="searchFieldBackground">@color/white</item>
+        <item name="searchIconTint">@color/blackYP</item>
+        <item name="searchTextColor">@color/blackYP</item>
+        <item name="searchHintTextColor">@color/blackYP</item>
+    </style>
+    <style name="AddFont">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
 
 </resources>
